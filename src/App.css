@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.main {
+  background: #151522;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 900;
+  text-shadow: 10px 10px 8px #811f6d;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-info > h5 {
+  color: #811f6d;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-info > p {
+  color: #811f6d;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.icons {
+  font-size: 2rem;
+}
+.cards {
+  position: relative;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.cards > p {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+hr {
+  margin-left: 25%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  width: 50%;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(46, 27, 116, 0.75),
+    rgba(255, 255, 255, 0)
+  );
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills-card {
+  margin: 1rem 1rem;
+  transition: box-shadow 0.7 ease;
+}
+.skills-card:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.icon {
+  font-size: 6rem;
 }
