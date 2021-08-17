@@ -12,15 +12,15 @@ export const Header = () => {
                 <p>I'm a full stack developer</p>
 
                 <div className="icons mt-5">
-                    <a href="#" target="_blank"><i className="fab fa-facebook-f m-3"></i></a>
-                    <a href="#" target="_blank"><i className="fab fa-instagram m-3"></i></a>
-                    <a href="#" target="_blank"><i className="fab fa-linkedin-in m-3"></i></a>
-                    <a href="#" target="_blank"><i className="fab fa-github m-3"></i></a>
-                    <a href="#" target="_blank"><i className="fab fa-twitter m-3"></i></a>
+                    <a className="fb" href="#" target="_blank"><i className="fab fa-facebook-f m-3"></i></a>
+                    <a className="ig" href="#" target="_blank"><i className="fab fa-instagram m-3"></i></a>
+                    <a className="linked" href="#" target="_blank"><i className="fab fa-linkedin-in m-3"></i></a>
+                    <a className="git" href="#" target="_blank"><i className="fab fa-github m-3"></i></a>
+                    <a className="tweet" href="#" target="_blank"><i className="fab fa-twitter m-3"></i></a>
                 </div>
             </Col>
             <Col className="header-img mt-5 px-5 d-flex justify-content-center">
-                <img src={bannerImg} alt="Banner" width = "70%"/>
+                <img src={bannerImg} alt="Banner" width = "60%"/>
             </Col>
         </Row>
         </Container>
