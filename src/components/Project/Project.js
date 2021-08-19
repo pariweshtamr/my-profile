@@ -9,6 +9,7 @@ import Final from '../../img/final.png';
 import Glass from '../../img/glass.png';
 import Port from '../../img/port.png';
 import PP2 from '../../img/pp2.png';
+import eCom from '../../img/eCom.png';
 
 export const Project = () => {
     return (
@@ -75,7 +76,7 @@ export const Project = () => {
                     <h3 className="project-item-title">Not-to-do Application</h3>
                   <ul>
                     <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technologies - <span>Html, Css</span></li>
+                    <li>Technologies - <span>Html, Css, React</span></li>
                     <li>Role - <span>FrontEnd</span></li>
                   </ul>
                 </div>
@@ -90,7 +91,7 @@ export const Project = () => {
                     <h3 className="project-item-title">Prank Calculator</h3>
                   <ul>
                     <li>Created - <span>4 Dec 2020</span></li>
-                    <li>Technologies - <span>Html, Css</span></li>
+                    <li>Technologies - <span>Html, Css, Javascript</span></li>
                     <li>Role - <span>FrontEnd</span></li>
                   </ul>
                 </div>
@@ -150,6 +151,21 @@ export const Project = () => {
                     <h3 className="project-item-title"> My Portfolio #4</h3>
                   <ul>
                     <li>Created - <span>4 Dec 2020</span></li>
+                    <li>Technologies - <span>Html, Css</span></li>
+                    <li>Role - <span>FrontEnd</span></li>
+                  </ul>
+                </div>
+            </div>
+            </Col>
+            <Col sm="12" md="6" lg="4">
+            <div className="project-item">
+                <div className="project-item-thumbnail">
+                    <img src={eCom} alt="Portfolio" height="200vh"/>
+                </div>
+                <div class="general-info">
+                    <h3 className="project-item-title"> E-Commerce Design</h3>
+                  <ul>
+                    <li>Created - <span>19 August 2021</span></li>
                     <li>Technologies - <span>Html, Css</span></li>
                     <li>Role - <span>FrontEnd</span></li>
                   </ul>
