@@ -3,6 +3,7 @@ import { Col, Container, Row} from 'react-bootstrap'
 
 export const Skills = () => {
     return (
+        <section className="skills-section" id="skills">
         <Container>
             <Row>
                 <Col>
@@ -12,7 +13,7 @@ export const Skills = () => {
                 </Col>
             </Row>
             <Row>
-                <Col sm="12" md="6" lg="4" >
+                <Col sm="12" md="6" lg="4">
                 <div className="skills-card cards rounded">
                     <div className="skills-icon text-center py-4">
                         <i className="fab fa-html5 icon" style={{color: "orangered"}}></i>
@@ -76,5 +77,6 @@ export const Skills = () => {
             </Row>
             
         </Container>
+        </section>
     )
 }
