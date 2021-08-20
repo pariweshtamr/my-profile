@@ -1,40 +1,35 @@
 import React from 'react';
 
-import {Navigation} from './components/Navbar/Navigation';
 import { Header } from './components/Header/Header';
 import { AboutSection } from './components/About/AboutSection';
 import { Skills } from './components/Skills/Skills';
 import { Project } from './components/Project/Project';
 import { Contact } from './components/Contact/Contact';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import './App.css';
+import { MainLayout } from './components/Layout/MainLayout';
 
 function App() {
   return (
+    <Router>
+      <Switch> 
     <div className="main">
-      <div className="nav-section">
-      <Navigation />                
-      </div>
-      <section className="header-section">
-      <Header />  
-      </section>
-      <hr />
-      <section className="about-section" id="about">
-      <AboutSection />
-      </section> 
-      <hr />
-      <section className="skills-section" id="skills">
-      <Skills />
-      </section>
-      <hr />
-      <section className="project-section" id="projects">
-        <Project />
-      </section>
-      <hr />
-      <section className="contact-section" id="contact">
-        <Contact />
-      </section>
+      <MainLayout>      
+      <Route exact path="/" children={<Header />}></Route>          
+      <Route exact path="/about" children={<AboutSection />}></Route> 
+      <Route exact path="/skills" children={<Skills />}></Route>
+      <Route exact path="/projects" children={<Project />}></Route>
+      <Route exact path="/contact" children={<Contact />}></Route>
+      </MainLayout>   
     </div>
+    <Route path="/" children={<Header />}></Route>
+    </Switch>
+    </Router>
   );
 }
 

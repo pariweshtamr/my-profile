@@ -6,11 +6,12 @@ import aboutImg from '../../img/abt.png'
 
 export const AboutSection = () => {
     return (
+        <section className="about-section" id="about">
             <Container>
             <Row>
                 <Col>
                 <div className="about-img d-flex align-items-center justify-content-center">
-                    <img src={aboutImg} alt="abt" width="80%" />
+                    <img src={aboutImg} alt="abt"/>
                 </div>
                 </Col>
                
@@ -26,5 +27,6 @@ export const AboutSection = () => {
                 </Col>
             </Row>
             </Container> 
+            </section>
     )
 }

@@ -13,9 +13,9 @@
 section {
   height: 100vh;
 }
-.about-section,
 .project-section,
-.contact-section {
+.contact-section,
+.about-section {
   height: 100%;
 }
 .cards {
@@ -109,17 +109,15 @@ hr {
   -webkit-text-fill-color: transparent;
 }
 /* ABOUT SECTION */
-.about-section {
+.about-section .cards {
   margin-bottom: 5rem;
 }
 .about-img {
   position: relative;
+  width: 80%;
   top: 15%;
 }
 /* SKILLS SECTION */
-.skills-section {
-  margin: 5rem 0;
-}
 .skills-card {
   margin: 1rem 1rem;
   transition: box-shadow 0.7 ease;
@@ -136,7 +134,7 @@ hr {
 }
 /* PROJECTS SECTION */
 .project-section {
-  margin: 5rem 0;
+  padding-bottom: 8rem;
 }
 .project-item {
   margin: 1rem 0;
@@ -186,6 +184,7 @@ hr {
 .contact-info-item {
   color: white;
 }
+
 .contact-card {
   position: relative;
   width: 80%;
@@ -213,7 +212,6 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 .bttn {
-  position: relative;
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -222,25 +220,65 @@ hr {
   border-radius: 30px;
   color: var(--main-color);
   cursor: pointer;
-  vertical-align: middle;
-  overflow: hidden;
-  transition: color 0.5s ease;
   margin: 0 30px 30px 0;
-}
-.bttn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0%;
-  background: var(--main-color);
-  z-index: -1;
-  transition: width 0.5s ease;
-}
-.bttn:hover::before {
-  width: 100%;
 }
 .bttn:hover {
   color: white;
+  background: var(--main-color);
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1824px) {
+  .about-section {
+    height: 100vh;
+  }
+  .contact-section {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-img {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    height: 100%;
+  }
+  .header-section {
+    height: 100%;
+  }
+  .header-info,
+  .header-img {
+    width: 100%;
+  }
+  .header-info {
+    text-align: center;
+  }
+  .header-img {
+    order: -1;
+  }
+  .contact-form,
+  .contact-info,
+  .cards {
+    width: 100%;
+  }
+  .contact-info {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .about-section {
+    height: 100%;
+  }
+  .about-img {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .cards {
+    margin-bottom: 5rem;
+  }
 }

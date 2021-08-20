@@ -13,6 +13,7 @@ import eCom from '../../img/eCom.png';
 
 export const Project = () => {
     return (
+      <section className="project-section" id="projects">
     <Container>
         <Row>
             <Col>
@@ -174,5 +175,6 @@ export const Project = () => {
             </Col>
         </Row>
     </Container>
+    </section>
     )
 }
