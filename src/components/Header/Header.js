@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import bannerImg from '../../img/banner.png';
+import Particles from 'react-particles-js';
 
 export const Header = () => {
     return (
@@ -20,7 +21,8 @@ export const Header = () => {
                             <a className="ig" href="https://www.instagram.com/pariwesh.tamrakar/" target="_blank" rel="noreferrer"><i className="fab fa-instagram m-3"></i></a>
                 </div>
             </Col>
-            
+
+        
             <Col className="header-img mt-5 px-5 d-flex justify-content-center">
                 <img src={bannerImg} alt="Banner" width = "60%"/>
             </Col>
